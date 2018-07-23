@@ -1,27 +1,28 @@
 <!DOCTYPE html>
 <html xmlns:th="http://www.thymeleaf.org">
 <script type="text/javascript">
-    alert('head前')
+//    alert('head前')
 </script>
 <head th:include="header :: script"></head>
 <script type="text/javascript">
     $(document).ready(function () {
-        alert('head后')
+//        alert('head后')
     })
 </script>
 <body>
 <script type="text/javascript">
-    alert('进body')
+//    alert('进body')
 </script>
 <div th:include="header :: header1"></div>
 <h2>登录</h2>
 <div th:include="header :: header2"></div>
 <div>
     这是登录页面
+    <span th:text="${msg}"></span>
 </div>
 <div th:include="footer :: footer"></div>
 </body>
 <script type="text/javascript">
-    alert('出body，在最后')
+//    alert('出body，在最后')
 </script>
 </html>
